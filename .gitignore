@@ -1,0 +1,5 @@
+*.exe
+*.rar
+*.zip
+.code-workspace
+.vscode

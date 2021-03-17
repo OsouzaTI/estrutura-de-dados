@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "monokai-charcoal (white)",
+		"files.associations": {
+			"stdio.h": "c"
+		}
+	}
+}
