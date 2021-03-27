@@ -30,9 +30,11 @@ int main(){
     nList* lista2 = NULL;
 
     clock_t t;
+    int i;
 
-    for(int i = 0 ; i < 1000; i++)
-        insertAtEnd(&lista1, rand()%1000);
+    insertAtEnd(&lista1, 1);
+    insertAtEnd(&lista1, 0);
+    insertAtEnd(&lista1, 2);
 
     infoNdList(lista1);
     printf("\n movendo ponteiros \n");
@@ -242,7 +244,10 @@ nList* findMin(nList* l){
 /* O(2n) */
 void moveLess(nList** l){
     nList *aux , *antMin, *min, *p;
-    min = findMin(*l); /* O(n) */
+    if((min = findMin(*l))==*l){
+        printf("o primeiro e o menor!\n");
+        return;
+    }
     /* O(n) */
     for(p = *l;p;p = p->next){
         if(p->next == min){

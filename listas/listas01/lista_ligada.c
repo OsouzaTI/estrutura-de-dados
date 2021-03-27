@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SUPPORTED_ANSI_COLORS
-#include "linkedlist.h"
+#define LINKED_LIST
+#include "../libs/lists.h"
 
-LinkedList* lista = NULL;
+sNode* lista = NULL;
 
 int main(void)
 {   
@@ -12,15 +12,16 @@ int main(void)
     // for (i = 0; i < 3; i++)
     // {
     //     scanf("%d", &v);
-    //     insertAtEnd(&lista, v);
+    //     sInsertAtEnd(&lista, v);
     // }
-    insertAtEnd(&lista, 9);
-    insertAtEnd(&lista, 10);
-    insertAtEnd(&lista, 4);
-    insertAtEnd(&lista, 3);
-    insertAtEnd(&lista, 5);
-    insertAtEnd(&lista, 7);
-    swapKeys(&lista, 9, 4);
+    sInsertAtEnd(&lista, 9);
+    sInsertAtEnd(&lista, 10);
+    sInsertAtEnd(&lista, 4);
+    sInsertAtEnd(&lista, 3);
+    sInsertAtEnd(&lista, 5);
+    sInsertAtEnd(&lista, 7);
+    sSwapKeys(&lista, 9, 4);
+
     infoList(lista);
     /* troca os valores entre dois nodos */
     swapValue(atPosition(lista, 0),atPosition(lista, 1));
