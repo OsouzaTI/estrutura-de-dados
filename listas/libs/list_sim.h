@@ -85,6 +85,7 @@ int sInsertAtBegin(sList* n, int value){
     newsNode->value = value;
     newsNode->next = n->first;
     n->first = newsNode;
+
     return (1);
 }
 

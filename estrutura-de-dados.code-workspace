@@ -8,7 +8,8 @@
 		"workbench.colorTheme": "monokai-charcoal (white)",
 		"files.associations": {
 			"stdio.h": "c",
-			"stdlib.h": "c"
+			"stdlib.h": "c",
+			"stack.h": "c"
 		}
 	}
 }
